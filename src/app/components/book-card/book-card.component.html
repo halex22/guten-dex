@@ -1,0 +1,19 @@
+<div class="book-card">
+  <div class="img-container">
+    <img src="{{cover()}}" loading="lazy">
+  </div>
+  <div class="info-container">
+    <h3>{{book().title}}</h3>
+    <ul>
+      <li *ngFor="let author of book().authors">
+        <app-author [author]="author"></app-author>
+      </li>
+    </ul>
+
+    <p class="book-summary">{{book().summaries[0]}}</p>
+    <div>
+      <a [routerLink]="['/detail',book().id]">Details</a>
+    </div>
+  </div>
+
+</div>
