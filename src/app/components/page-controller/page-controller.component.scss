@@ -1,0 +1,11 @@
+button {
+    background-color: inherit;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+
+    &:hover {
+        background-color: rgb(176, 170, 170);
+        color: white;
+    }
+}
